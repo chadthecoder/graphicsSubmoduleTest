@@ -1,3 +1,12 @@
 [submodule "deps/sdl2"]
 	path = deps/sdl2
 	url = https://github.com/spurious/SDL-mirror.git
+[submodule "deps/glew"]
+	path = deps/glew
+	url = https://github.com/nigels-com/glew.git
+[submodule "deps/glfw"]
+	path = deps/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "deps/glm"]
+	path = deps/glm
+	url = https://github.com/g-truc/glm.git

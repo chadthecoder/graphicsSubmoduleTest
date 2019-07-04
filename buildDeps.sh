@@ -7,12 +7,17 @@ cmake ..
 make
 cd ../../..
 
+cd deps/glew
+make extensions
+make
+cd ../..
+
 cd deps/glfw
 cmake .
 make
 cd ../..
 
-cd deps/glew
-make extensions
+cd deps/glm
+cmake .
 make
 cd ../..

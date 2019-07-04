@@ -4,16 +4,15 @@ main = main.cpp
 
 linksWin = -lglew32 -lglfw3 -lgdi32 -lopengl32 -lmingw32 -lSDL2main -lSDL2
 
-linksLin = -lglfw -lSDL2main -lSDL2
-fun = -lGLEW
+linksLin = -lGLEW -lglfw -lGL -lSDL2main -lSDL2
 
 includeDepsWin = -I "libsWin\glew\include" -I "libsWin\glfw\include" -I "libsWin\SDL2\i686-w64-mingw32\include"
 
-includeDepsLin = -I ".\deps\glfw\include\" -I ".\deps\sdl2\include\"
+includeDepsLin = -I ".\deps\glew\include\GL\" -I ".\deps\glfw\include\" -I ".\deps\sdl2\include\"
 
 linkingDepsWin = -L "libsWin\glew\lib\Release\Win32" -L "libsWin\glfw\lib-mingw" -L "libsWin\SDL2\i686-w64-mingw32\lib"
 
-linkingDepsLin = -L ".\deps\glfw\src\" -L ".\deps\sdl2\libs\"
+linkingDepsLin = -L ".\deps\glew\libs\" -L ".\deps\glfw\src\" -L ".\deps\sdl2\libs\"
 
 libsWin = $(includeDepsWin) $(linkingDepsWin) $(linksWin)
 

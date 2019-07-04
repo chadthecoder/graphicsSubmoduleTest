@@ -1,4 +1,8 @@
+#include "deps/glew/include/GL/glew.h"
+#include "deps/glfw/include/GLFW/glfw3.h"
 #include "deps/sdl2/include/SDL.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 #include <iostream>
 

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd deps/sdl2
 mkdir libs
 cd libs
@@ -7,5 +9,10 @@ cd ../../..
 
 cd deps/glfw
 cmake .
+make
+cd ../..
+
+cd deps/glew
+make extensions
 make
 cd ../..
